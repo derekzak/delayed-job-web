@@ -5,9 +5,9 @@ require 'delayed/web/version'
 Gem::Specification.new do |s|
   s.name        = 'delayed-web'
   s.version     = Delayed::Web::VERSION
-  s.authors     = ['Tate Johnson']
-  s.email       = ['tate@tatey.com']
-  s.homepage    = 'http://github.com/tatey/delayed-web'
+  s.authors     = ['Derek Zak', 'Tate Johnson']
+  s.email       = ['zak@arizonabay.com']
+  s.homepage    = 'http://github.com/derekzak/delayed-web'
   s.summary     = 'A rails engine that provides a simple web interface for exposing the Delayed::Job queue.'
   s.description = 'A rails engine that provides a simple web interface for exposing the Delayed::Job queue.'
   s.license     = 'MIT'

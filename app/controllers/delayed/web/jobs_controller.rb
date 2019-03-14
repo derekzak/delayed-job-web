@@ -23,6 +23,16 @@ module Delayed
         redirect_to jobs_path
       end
 
+      def destroy_all
+        for job in jobs
+          if job.can_destroy?
+            job.destroy
+          end
+        end
+        flash[:notice] = t(:notice, scope: 'delayed/web.flashes.jobs.destroyed_all')
+        redirect_to jobs_path
+      end
+
       private
 
       def job

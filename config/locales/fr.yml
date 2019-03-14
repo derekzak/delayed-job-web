@@ -20,6 +20,7 @@ fr:
       buttons:
         run_next: Suivant
         delete: Supprimer
+        delete_all: Supprimer Tout
       statuses:
         executing: En cours
         failed: Echec
@@ -34,6 +35,8 @@ fr:
         destroyed:
           alert: Cette tâche ne peut pas être supprimée car elle est déjà %{status}
           notice: Tâche supprimée
+        destroyed_all:
+          notice: Tâches supprimées
 
   time:
     formats:

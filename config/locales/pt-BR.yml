@@ -14,8 +14,9 @@ pt-BR:
       actions: Ações
       current_queue: Fila
       buttons:
-        run_next: Executar próximo
+        run_next: Executar Próximo
         delete: Excluir
+        delete_all: Excluir Tudo
       queue:
         empty: Uma fila limpa é uma boa fila.
       errors:
@@ -34,6 +35,8 @@ pt-BR:
         destroyed:
           alert: 'Tarefa não pode ser excluída porque ela já está %{status}'
           notice: 'Tarefa excluída'
+        destroyed_all:
+          notice: 'Tarefas excluídas'
 
   time:
     formats:

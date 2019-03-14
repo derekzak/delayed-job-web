@@ -5,6 +5,10 @@
   <h3><%= t('delayed/web.views.server_time') %> <%= l(Time.now, format: :short)%><h3>
 </div>
 
+<div>
+  <%= button_to t('delayed/web.views.buttons.delete_all'), job_path(job), method: :delete, class: 'btn btn-danger btn-mini btn-action', form_class: 'btn-rails pull-right', title: t('delayed/web.views.buttons.delete_all'), onclick: "return confirm('#{t('delayed/web.views.confirm.delete_all')}')" %>
+</div>
+
 <table class="table table-bordered">
   <thead>
     <tr>
