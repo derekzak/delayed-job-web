@@ -809,6 +809,12 @@ h4 small {
   border-bottom: 1px solid #eeeeee;
 }
 
+.delete-all-button {
+  padding-bottom: 9px;
+  padding-right: 9px;
+  margin: 0 0 20px;
+}
+
 ul,
 ol {
   padding: 0;
