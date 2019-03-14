@@ -1,6 +1,6 @@
 # Delayed::Web for Delayed::Job
 
-[![Build Status](https://travis-ci.org/tatey/delayed-web.svg?branch=master)](https://travis-ci.org/tatey/delayed-web)
+Forked from [Delayed::Web](https://github.com/tatey/delayed-web)
 
 A rails engine that provides a simple web interface for exposing the
 [Delayed::Job](https://github.com/collectiveidea/delayed_job) queue.
