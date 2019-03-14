@@ -1,6 +1,6 @@
 # Delayed::Web for Delayed::Job
 
-Forked from [Delayed::Web](https://github.com/tatey/delayed-web)
+Forked from [Delayed::Web](https://github.com/tatey/delayed-web) to add additional functionality.
 
 A rails engine that provides a simple web interface for exposing the
 [Delayed::Job](https://github.com/collectiveidea/delayed_job) queue.
@@ -121,7 +121,7 @@ en:
 ```
 
 🇬🇧 English, 🇫🇷 French, and 🇧🇷 Portuguese are supported. You can find the full list
-[here](https://github.com/tatey/delayed-web/blob/master/config/locales/).
+[here](https://github.com/derekzak/delayed-web/blob/master/config/locales/).
 
 ## Developing Locally
 
@@ -142,16 +142,6 @@ Go to http://localhost:3000.
 
 The dummy rails app uses `Delayed::Web::Job::Double` as its backend.
 It is an in-memory double of a real Delayed::Job.
-
-## Special Thanks
-
-We're grateful for all our [contributors](https://github.com/tatey/delayed-web/graphs/contributors),
-but we're especially grateful for contributions by the following people:
-
-* [@anthony-robin](https://github.com/anthony-robin)
-* [@coop](https://github.com/coop)
-* [@eltiare](https://github.com/eltiare)
-* Development originally sponsored by TheBestDay Pty. Ltd.
 
 ## License
 
