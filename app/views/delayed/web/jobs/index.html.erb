@@ -6,7 +6,7 @@
 </div>
 
 <div>
-  <%= button_to t('delayed/web.views.buttons.delete_all'), job_path(job), method: :delete, class: 'btn btn-danger btn-mini btn-action', form_class: 'btn-rails pull-right', title: t('delayed/web.views.buttons.delete_all'), onclick: "return confirm('#{t('delayed/web.views.confirm.delete_all')}')" %>
+  <%= button_to t('delayed/web.views.buttons.delete_all'), jobs_path, method: :destroy_all, class: 'btn btn-danger btn-mini btn-action', form_class: 'btn-rails pull-right', title: t('delayed/web.views.buttons.delete_all'), onclick: "return confirm('#{t('delayed/web.views.confirm.delete_all')}')" %>
 </div>
 
 <table class="table table-bordered">
