@@ -34,13 +34,13 @@ module Delayed
       end
 
       def start_worker_daemon
-        `RAILS_ENV=#{Rails.env} script/delayed_job start`
+        `RAILS_ENV=#{Rails.env} bin/delayed_job start`
         flash[:notice] = t(:notice, scope: 'delayed/web.flashes.jobs.start_worker_daemon')
         redirect_to jobs_path
       end
 
       def stop_worker_daemon
-        `RAILS_ENV=#{Rails.env} script/delayed_job stop`
+        `RAILS_ENV=#{Rails.env} bin/delayed_job stop`
         flash[:notice] = t(:notice, scope: 'delayed/web.flashes.jobs.stop_worker_daemon')
         redirect_to jobs_path
       end
