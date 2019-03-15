@@ -9,7 +9,7 @@ module Delayed
           status = t(job.status, scope: 'delayed/web.views.statuses')
           flash[:alert] = t(:alert, scope: 'delayed/web.flashes.jobs.queued', status: status)
         end
-        redirect_to "/"
+        redirect_to "/jobs"
       end
 
       def destroy
@@ -20,7 +20,7 @@ module Delayed
           status = t(job.status, scope: 'delayed/web.views.statuses')
           flash[:alert] = t(:alert, scope: 'delayed/web.flashes.jobs.destroyed', status: status)
         end
-        redirect_to "/"
+        redirect_to "/jobs"
       end
 
       def destroy_all
@@ -30,19 +30,19 @@ module Delayed
           end
         end
         flash[:notice] = t(:notice, scope: 'delayed/web.flashes.jobs.destroyed_all')
-        redirect_to "/"
+        redirect_to "/jobs"
       end
 
       def start_worker_daemon
         `RAILS_ENV=#{Rails.env} bin/delayed_job start`
         flash[:notice] = t(:notice, scope: 'delayed/web.flashes.jobs.start_worker_daemon')
-        redirect_to "/"
+        redirect_to "/jobs"
       end
 
       def stop_worker_daemon
         `RAILS_ENV=#{Rails.env} bin/delayed_job stop`
         flash[:notice] = t(:notice, scope: 'delayed/web.flashes.jobs.stop_worker_daemon')
-        redirect_to "/"
+        redirect_to "/jobs"
       end
 
       private
