@@ -809,7 +809,7 @@ h4 small {
   border-bottom: 1px solid #eeeeee;
 }
 
-.delete-all-button {
+.global-button-group {
   padding-bottom: 9px;
   padding-right: 9px;
   margin: 0 0 20px;
@@ -3332,6 +3332,11 @@ button.close {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
+}
+
+.btn-global {
+  margin-left: 9px;
+  width: auto !important;
 }
 
 .btn-block {

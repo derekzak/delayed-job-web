@@ -5,8 +5,10 @@
   <h3><%= t('delayed/web.views.server_time') %> <%= l(Time.now, format: :short)%><h3>
 </div>
 
-<div class="delete-all-button">
-  <%= button_to t('delayed/web.views.buttons.delete_all'), destroy_all_jobs_path, method: :post, class: 'btn btn-danger btn-mini btn-action', form_class: 'btn-rails pull-right', title: t('delayed/web.views.buttons.delete_all'), onclick: "return confirm('#{t('delayed/web.views.confirm.delete_all')}')" %>
+<div class="global-button-group">
+  <%= button_to t('delayed/web.views.buttons.delete_all'), destroy_all_jobs_path, method: :post, class: 'btn btn-danger btn-mini btn-global', form_class: 'btn-rails pull-right', title: t('delayed/web.views.buttons.delete_all'), onclick: "return confirm('#{t('delayed/web.views.confirm.delete_all')}')" %>
+  <%= button_to t('delayed/web.views.buttons.stop_worker'), stop_jobs_worker_daemon_path, method: :post, class: 'btn btn-danger btn-mini btn-global', form_class: 'btn-rails pull-right', title: t('delayed/web.views.buttons.stop_worker'), onclick: "return confirm('#{t('delayed/web.views.confirm.stop_worker')}')" %>
+  <%= button_to t('delayed/web.views.buttons.start_worker'), start_jobs_worker_daemon_path, method: :post, class: 'btn btn-danger btn-mini btn-global', form_class: 'btn-rails pull-right', title: t('delayed/web.views.buttons.start_worker'), onclick: "return confirm('#{t('delayed/web.views.confirm.start_worker')}')" %>
 </div>
 
 <table class="table table-bordered">

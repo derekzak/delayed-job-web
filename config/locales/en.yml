@@ -17,6 +17,8 @@ en:
         run_next: Run Next
         delete: Delete
         delete_all: Delete All
+        start_worker: Start DJ Worker
+        stop_worker: Stop DJ Worker
       queue:
         empty: An empty queue is a good queue.
       errors:
@@ -28,6 +30,8 @@ en:
       confirm:
         delete: Are you sure you want to delete this job?
         delete_all: Are you sure you want to delete all jobs?
+        start_worker: Are you sure you want to start the Delated Job worker?
+        stop_worker: Are you sure you want to stop the Delated Job worker?
     flashes:
       jobs:
         queued:
@@ -38,6 +42,10 @@ en:
           notice: 'Job destroyed'
         destroyed_all:
           notice: 'Jobs destroyed'
+        start_worker_daemon:
+          notice: 'Delayed Job worked daemon started'
+        stop_worker_daemon:
+          notice: 'Delayed Job worked daemon stopped'
 
   time:
     formats:
